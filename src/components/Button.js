@@ -22,6 +22,8 @@ const styles = StyleSheet.create({
   button: {
     width: '100%',
     marginVertical: 10,
+    backgroundColor: theme.colors.blue,
+    borderRadius: 20,
   },
   text: {
     fontWeight: 'bold',

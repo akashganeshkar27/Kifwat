@@ -1,16 +1,10 @@
-import React, { memo } from 'react';
-import {
-  ImageBackground,
-  StyleSheet,
-  KeyboardAvoidingView,
-} from 'react-native';
+import React, {memo} from 'react';
+import {ImageBackground, StyleSheet, KeyboardAvoidingView} from 'react-native';
 
-const Background = ({ children }) => (
+const Background = ({children}) => (
   <ImageBackground
-    source={require('../assets/background_dot.png')}
-    resizeMode="repeat"
-    style={styles.background}
-  >
+    source={require('../assets/images/background-dark.png')}
+    style={styles.background}>
     <KeyboardAvoidingView style={styles.container} behavior="padding">
       {children}
     </KeyboardAvoidingView>
@@ -24,7 +18,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    padding: 20,
+    padding: 10,
     width: '100%',
     maxWidth: 340,
     alignSelf: 'center',

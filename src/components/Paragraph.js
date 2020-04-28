@@ -8,9 +8,10 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     lineHeight: 26,
-    color: theme.colors.secondary,
+    color: theme.colors.white,
     textAlign: 'center',
     marginBottom: 14,
+    justifyContent: 'center',
   },
 });
 
