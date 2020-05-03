@@ -1,13 +1,14 @@
-import React, { memo } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { TextInput as Input } from 'react-native-paper';
-import { theme } from '../core/theme';
+import React, {memo} from 'react';
+import {View, StyleSheet, Text} from 'react-native';
+import {TextInput as Input} from 'react-native-paper';
+import {theme} from '../core/theme';
+import {Colors} from '../styles';
 
-const TextInput = ({ errorText, ...props }) => (
+const TextInput = ({errorText, ...props}) => (
   <View style={styles.container}>
     <Input
       style={styles.input}
-      selectionColor={theme.colors.primary}
+      selectionColor={theme.colors.blue}
       underlineColor="transparent"
       mode="outlined"
       {...props}
@@ -19,10 +20,12 @@ const TextInput = ({ errorText, ...props }) => (
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    marginVertical: 12,
+    padding: 8,
   },
   input: {
-    backgroundColor: theme.colors.surface,
+    backgroundColor: Colors.GRAY_LIGHT,
+    borderRadius: 1,
+    borderColor: Colors.GRAY_MEDIUM,
   },
   error: {
     fontSize: 14,

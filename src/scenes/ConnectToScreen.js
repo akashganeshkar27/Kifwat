@@ -15,7 +15,7 @@ const ConnectToScreen = ({navigation}) => (
       <Text style={style.subTitle}>se connecter{'\n'}comme?</Text>
       <View style={style.mainConnecter}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('LoginScreen')}
+          onPress={() => navigation.navigate('RegisterScreen')}
           style={style.btnConnecter}
           activeOpacity={0.5}>
           <Image
@@ -24,7 +24,7 @@ const ConnectToScreen = ({navigation}) => (
           />
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => navigation.navigate('LoginScreen')}
+          onPress={() => navigation.navigate('RegisterScreen')}
           style={style.btnConnecter}
           activeOpacity={0.5}>
           <Image
@@ -35,7 +35,7 @@ const ConnectToScreen = ({navigation}) => (
       </View>
       <View style={style.socialLogin}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('LoginScreen')}
+          onPress={() => navigation.navigate('RegisterScreen')}
           style={style.loginBtnContainer}
           activeOpacity={0.5}>
           <Image
@@ -44,7 +44,7 @@ const ConnectToScreen = ({navigation}) => (
           />
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => navigation.navigate('LoginScreen')}
+          onPress={() => navigation.navigate('RegisterScreen')}
           style={style.loginBtnContainer}
           activeOpacity={0.5}>
           <Image
@@ -53,7 +53,7 @@ const ConnectToScreen = ({navigation}) => (
           />
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => navigation.navigate('LoginScreen')}
+          onPress={() => navigation.navigate('RegisterScreen')}
           style={style.loginBtnContainer}
           activeOpacity={0.5}>
           <Image
