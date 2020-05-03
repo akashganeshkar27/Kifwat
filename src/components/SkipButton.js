@@ -1,13 +1,18 @@
-import React, { memo } from 'react';
-import { TouchableOpacity, Image, StyleSheet, Text } from 'react-native';
-import { getStatusBarHeight } from 'react-native-status-bar-height';
-import { theme } from '../core/theme';
+import React, {memo} from 'react';
+import {TouchableOpacity, Image, StyleSheet, Text} from 'react-native';
+import {theme} from '../core/theme';
 
-const SkipButton = ({ goNext}) => (
+const SkipButton = ({goNext}) => (
   <TouchableOpacity onPress={goNext} style={styles.container}>
     <Text style={styles.textStyles}>Sauter</Text>
-    <Image source={require('../assets/images/arrow_forward.png')} style={styles.image} />
-    <Image source={require('../assets/images/arrow_forward.png')} style={styles.image} />
+    <Image
+      source={require('../assets/images/arrow_forward.png')}
+      style={styles.image}
+    />
+    <Image
+      source={require('../assets/images/arrow_forward.png')}
+      style={styles.image}
+    />
   </TouchableOpacity>
 );
 
@@ -18,7 +23,7 @@ const styles = StyleSheet.create({
   },
   textStyles: {
     color: theme.colors.white,
-    fontWeight: 'bold',
+    fontWeight: 'normal',
     fontSize: 16,
     lineHeight: 20,
     right: 20,
